@@ -1,43 +1,59 @@
-# ⏱️ Focus Timer App
+```markdown
+# ✅ Task Manager Mini-App
 
-Welcome to your new productivity sidekick! 🚀  
-This timer app helps you stay laser-focused during work and know exactly when to take short or long breaks—with visual transitions, sound cues, and a playlist to keep you in the zone. 🎧💡
-
----
-
-## 🎯 What It Does
-
-- 🎵 **Plays relaxing music** while you focus
-- 🧘‍♂️ **Lets you switch between focus, short break, and long break modes**
-- 📸 **Changes the banner and theme dynamically** for each mode
-- 🎬 **Start/pause buttons** with fun sound effects for feedback
-- 📲 **Displays countdown in real-time**
+Welcome to my simple, stylish JavaScript task manager! 📋✨  
+This project lets users **create**, **complete**, and **delete** tasks with a click of a button — perfect for anyone who loves staying organized with clean code and cool buttons.
 
 ---
 
-## 🛠️ Technologies
+## 🚀 Features
 
-- **Vanilla JavaScript**
-- **HTML5 / CSS3**
-- **DOM Manipulation**
-- **Audio API**
+- ✨ **Add tasks** dynamically to your to-do list  
+- ✅ **Mark tasks as done** with a stylish toggle effect  
+- ❌ **Delete tasks** when you're done with them  
+- 📦 Component-based logic with `BotaoConclui` and `BotaoDeleta` for clean separation of functionalities
 
 ---
 
-## 📚 How It Works
+## 🔧 Technologies Used
 
-You choose your mode:
-- `Focus`: sets timer to 25 minutes
-- `Short Break`: sets timer to 5 minutes
-- `Long Break`: sets timer to 15 minutes
+- Vanilla **JavaScript**
+- DOM manipulation
+- Modular design using `export/import`
 
-Each mode:
-- Updates the banner and title text 💬
-- Activates background music if toggled 🎶
-- Shows a countdown ⏳
-- Plays sound effects when the timer starts, pauses, or ends 🔊
+---
+
+## 🧠 How It Works
+
+When a task is added:
+- A new `<li>` element is created with a description
+- The **"Conclude"** button toggles the `.done` class
+- The **"Delete"** button removes the task completely from the list
 
 ```js
-musicaFocoInput.addEventListener('change', () => {
-  musica.paused ? musica.play() : musica.pause();
-});
+// Adding a task
+novaTarefa.addEventListener('click', criarTarefa);
+
+// Marking as done
+tarefaCompleta.classList.toggle('done');
+
+// Removing task
+tarefaDeletada.remove();
+```
+
+---
+
+## ✍️ Author's Note
+
+This is just the beginning! I'm working on evolving my career as a developer 🚀  
+Feel free to check out more of my work or suggest improvements!
+
+---
+
+## 📎 License
+
+This project is free to use and modify. Just give credit where it's due 💙
+
+```
+
+Want me to add emojis, badges, or a demo GIF section too? Let's make this README pop like a task list on Monday morning! 😄📅✅
